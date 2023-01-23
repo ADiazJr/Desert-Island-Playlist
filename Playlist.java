@@ -15,8 +15,15 @@ class Playlist {
 
     System.out.println(desertIslandPlaylist);
     System.out.println(desertIslandPlaylist.size());
+
     desertIslandPlaylist.remove("S.O.S.");
-    desertIslandPlaylist.remove("Miss You");
+    desertIslandPlaylist.remove("Miss you");
     desertIslandPlaylist.remove("Yesterday");
+
+    //Switch index positions of 1 and 4
+    String tempA = "Jugaste Y Sufri";
+    desertIslandPlaylist.set(1, "Almost Back");
+    desertIslandPlaylist.set(4, tempA);
+    System.out.println(desertIslandPlaylist);
   }  
 }
